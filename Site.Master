@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="E_Commerce.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="d-flex justify-content-between align-items-center py-3 navbar m-3">
+                <a class="navbar-brand" href="#">
+                <img src="./Content/assets/logo.png" alt="Logo" width="130" height="130" class="d-inline-block justify-content-start">
+                AspiraTutto
+                </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="default.aspx" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="carrello.aspx" class="nav-link">Carrello</a></li>
+      </ul>
+    </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
